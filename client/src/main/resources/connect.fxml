@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="200" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="am9.chat.client.gui.ConnectController">
+    <TabPane prefHeight="354.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="服务器">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <TextField fx:id="address" layoutX="22.0" layoutY="29.0" />
+                <Text layoutX="22.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="服务器地址" />
+                <Text layoutX="22.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="端口" />
+                <TextField fx:id="port" layoutX="22.0" layoutY="67.0" />
+            </AnchorPane>
+        </Tab>
+        <Tab text="账号">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <TextField fx:id="name" layoutX="22.0" layoutY="29.0" />
+                <Text layoutX="22.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名" />
+                <Text layoutX="22.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" />
+                <PasswordField fx:id="password" layoutX="22.0" layoutY="67.0" />
+            </AnchorPane>
+        </Tab>
+    </TabPane>
+    <Button layoutX="142.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#onLoginClicked" text="登录" />
+    <Button layoutX="95.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#onRegisterClicked" text="注册" />
+   <Text fill="#a4a4a4" layoutX="14.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="版本：0.1.0" />
+</AnchorPane>
